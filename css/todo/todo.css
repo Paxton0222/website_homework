@@ -1,0 +1,134 @@
+.todo_list {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  overflow: scroll;
+}
+
+.todo_list::-webkit-scrollbar {
+  display: none;
+}
+
+.todo_list.side_menu_open {
+  width: calc(100vw - 300px);
+}
+
+.todo_section {
+  padding: 40px 10% 2rem 10%;
+}
+
+.first_level {
+  margin: 2rem 0 0 0;
+}
+
+.second_level {
+  margin-top: 2rem;
+}
+
+.second_level .todos {
+  margin-left: 2rem;
+}
+
+.first_level_todo_title {
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.second_level_todo_title {
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0 0 1rem 2rem;
+}
+
+.todo {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  align-items: center;
+  padding: 0.5rem 0rem 0.5rem 1rem;
+  height: 30px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.todo > div {
+  display: flex;
+  align-items: center;
+}
+
+.todo input[type="text"] {
+  outline: none;
+  border: none;
+}
+
+.todo input[type="text"]:focus {
+  border: none;
+  border-bottom: 1px solid #aba8a8;
+}
+
+.todo input[type="text"]:disabled {
+  background-color: transparent;
+}
+
+.todo input[type="checkbox"] {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  vertical-align: middle;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: white;
+  border: 1px solid #ddd;
+}
+
+.todo input[type="checkbox"]:checked {
+  background-color: #c7c7c7;
+}
+
+.todo > div:nth-child(2) > input[type="text"] {
+  font-size: 18px;
+  font-weight: 800;
+  color: black;
+  width: 100%;
+}
+
+.todo > div:nth-child(1) {
+}
+
+.todo > div:nth-child(3) {
+  cursor: pointer;
+  margin-left: 2rem;
+  position: relative;
+}
+
+.todo_menu {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  right: 10px;
+  bottom: -100px;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.todo_menu > div > p {
+  white-space: nowrap;
+  line-height: 2;
+  font-size: 14px;
+  color: #8b8b8b;
+  transition: all 0s ease-in-out;
+}
+
+.todo_menu > div > p:hover {
+  font-weight: 800;
+  color: #656565;
+}
+
+.todo_menu.hidden {
+  display: none;
+}
+
+.todos {
+  margin-top: 1rem;
+}

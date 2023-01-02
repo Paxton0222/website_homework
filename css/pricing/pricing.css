@@ -1,0 +1,137 @@
+* {
+  font-family: "Inter", "Helvetica Neue", "Helvetica";
+}
+
+body {
+  background-image: url("/images/pricing/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  backdrop-filter: blur(2px);
+}
+
+.container {
+  height: 100vh;
+  width: 60vw;
+  margin: auto;
+  display: flex;
+}
+
+.container > div {
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 28vh;
+}
+
+.title > p:nth-child(1) {
+  color: #545454;
+  font-style: normal;
+  font-size: 40px;
+  font-weight: bold;
+  align-self: center;
+  line-height: 60px;
+}
+
+.title > p:nth-child(2),
+.title > p:nth-child(3) {
+  color: #787878;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  align-self: center;
+  line-height: 40px;
+}
+
+.plans {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4rem;
+  gap: 2rem;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 2rem 0;
+  width: 20rem;
+  height: 25rem;
+}
+
+.price,
+.desc {
+  text-align: center;
+}
+
+.price {
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+  transform: rotate(-0.28deg);
+  padding-bottom: 2rem;
+}
+
+.price > p:nth-child(1) {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.price > p:nth-child(2) {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+}
+
+.price > p:nth-child(3) {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  color: #adadad;
+}
+
+.plan button {
+  background: #3fa3a8;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  font-style: normal;
+  padding: 12px 17px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out 0s;
+}
+
+.plan button:hover {
+  transform: scale(1.05);
+}
+
+.desc {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #adadad;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem 0.5rem;
+}
+
+.desc > p {
+  transition: 0.1s ease-in 0s;
+}
+
+.desc > p:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  color: #3fa3a8;
+}
